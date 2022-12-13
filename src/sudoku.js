@@ -1,6 +1,6 @@
-export default 
+//rmt2 push
 
-function SudokuCube (num1, num2, num3, num4, num5, num6, num7, num8, num9) {
+export default function SudokuCube (num1, num2, num3, num4, num5, num6, num7, num8, num9) {
   this.box1 = num1;
   this.box2 = num2;
   this.box3 = num3;
