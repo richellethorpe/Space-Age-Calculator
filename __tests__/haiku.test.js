@@ -1,9 +1,15 @@
 
-// import Player from '../src/sudoku.js';
+import Haiku from "../src/haiku";
 
-// describe ("Player", () => {
-//   test("should correctly create a player object with a name value", () =>{
-//     const newPlayer = new Player("Tyler")
-//    expect(newPlayer.name).toEqual("Tyler");
-// })
-//   })
+describe ("Haiku", () => {
+  test("should correctly return a haiku object with a poem", () => {
+    const newHaiku = new Haiku("There is the old pond! \n Lo, into it jumps a frog \n hark, water's music!")
+    expect(newHaiku.poem).toEqual("There is the old pond! \n Lo, into it jumps a frog \n hark, water's music!");
+  })
+
+  // test("should correctly determine if haiku object has 3 lines", () => {
+  //   const poem ="There is the old pond! \n Lo, into it jumps a frog \n hark, water's music!";
+  //   const newHaiku = new Haiku(poem)
+  //   expect(newHaiku.countLines(poem)).toEqual(3);
+  // })
+})

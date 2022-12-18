@@ -1,8 +1,13 @@
 // rmmmt
 
-// export default function Player (name) { 
-//   this.name = name;
-//   this.score = 0;
-//   this.nameCapped =nameCapped;
-//   }
+export default class Haiku {
+constructor(poem){
+    this.poem = poem;
+    this.lines = 0;
+    
+  }
+}
 
+// Haiku.prototype.countLines = function(poem) {
+
+// }
