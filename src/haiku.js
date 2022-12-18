@@ -1,29 +1,64 @@
 // rmmmt
 
 export default class Haiku {
-constructor(poem){
-    this.poem = poem;
-    this.lines = 1;
-    this.validLines;
-    
+constructor(line1, line2, line3){
+    // this.line1 = line1;
+    // this.line2 = line2;
+    // this.line3 = line3;
+
   }
 
 
-countLines(poem) {
-let stringPoem = poem.split(" ");
-stringPoem.forEach(word => {
-  if (word === "\n"){
-    this.lines +=1;
-}
-})
-}
 
-checkLines(){
-  if (this.lines !== 3){
-    this.validLines = false;
-  }else {
-    this.validLines = true;
-  }
 
-}
-}
+
+
+
+
+
+
+
+
+
+// endingE (poem) {
+//   let stringPoem = poem.split(" ");
+//   silentEArray = [];
+//   stringPoem.forEach(word => {
+//     let splitWord = word.split('');
+//     if (splitWord[splitWord.length - 1] === "e"){
+//       let newWord = splitWord.slice(0,splitWord.length -1);
+//       silentEArray.push(newWord);
+//     } else {
+//       silentEArray.push(splitWord);
+//     }
+//   })
+//   return silentEArray;
+// }
+
+// syllableCounter() {
+//   let stringPoem = poem.split(" ");
+//   const vowels = ["a", "e", "i", "o", "u"]
+//   stringPoem.forEach(word => {
+//     for (let i= 0; i<word.length; i++)
+
+//   })
+// }
+// }
+
+//STEPS:count 1 for each word, 2. add one for each vowel, 3. 
+
+// Entry.prototype.numberOfVowels = function(passage) {
+//   const vowels = ["a", "e", "i", "o", "u"];
+//   let arrayPassage = passage.split("");
+//   arrayPassage.forEach(element => {
+//     vowels.forEach(vowel => {
+//       if (element === vowel) {
+//         this.vowelCount ++;
+//       } 
+//     })
+//     })
+//   }
+
+['T', 'h', 'e', 'r', 'e', 
+'i', 's',
+'t', 'h', 'e', ' ', 'o', 'l', 'd', ' ', 'p', 'o', 'n', 'd', '!', ' ', '\n', ' ', 'L', 'o', ',', ' ', 'i', 'n', 't', 'o', ' ', 'i', 't', ' ', 'j', 'u', 'm', 'p', 's', ' ', 'a', ' ', 'f', 'r', 'o', 'g', ' ', '\n', ' ', 'h', 'a', 'r', 'k', ',', ' ', 'w', 'a', 't', 'e', 'r', "'", 's', ' ', 'm', 'u', 's', 'i', 'c', '!']
