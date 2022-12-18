@@ -19,6 +19,11 @@ stringPoem.forEach(word => {
 }
 
 checkLines(){
+  if (this.lines !== 3){
+    this.validLines = false;
+  }else {
+    this.validLines = true;
+  }
 
 }
 }
