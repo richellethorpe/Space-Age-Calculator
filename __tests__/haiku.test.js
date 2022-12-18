@@ -7,9 +7,9 @@ describe ("Haiku", () => {
     expect(newHaiku.poem).toEqual("There is the old pond! \n Lo, into it jumps a frog \n hark, water's music!");
   })
 
-  // test("should correctly determine if haiku object has 3 lines", () => {
-  //   const poem ="There is the old pond! \n Lo, into it jumps a frog \n hark, water's music!";
-  //   const newHaiku = new Haiku(poem)
-  //   expect(newHaiku.countLines(poem)).toEqual(3);
-  // })
+  test("should correctly determine how many lines the haiku has", () => {
+    const poem ="There is the old pond! \n Lo, into it jumps a frog \n hark, water's music!";
+    const newHaiku = new Haiku(poem)
+    expect(newHaiku.countLines(poem)).toEqual(3);
+  })
 })

@@ -6,8 +6,14 @@ constructor(poem){
     this.lines = 0;
     
   }
+
+
+countLines(poem) {
+// let stringPoem = poem.split(" ");
+// stringPoem.forEach(word => {
+//   if (word === "\n"){
+//     this.lines +=1
+//   }
+// })
 }
-
-// Haiku.prototype.countLines = function(poem) {
-
-// }
+}
