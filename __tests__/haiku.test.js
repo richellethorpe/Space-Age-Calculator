@@ -2,7 +2,7 @@
 import Haiku from "../src/haiku";
 //Blowing from the west
 //Fallen leaves gather
-//In the east
+//In the east .
 describe ("Haiku", () => {
   test("should correctly return a haiku object with three lines", () => {
     const newHaiku = new Haiku("Blowing from the west","Fallen leaves gather","In the east");
