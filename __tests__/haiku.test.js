@@ -10,6 +10,7 @@ describe ("Haiku", () => {
   test("should correctly determine how many lines the haiku has", () => {
     const poem ="There is the old pond! \n Lo, into it jumps a frog \n hark, water's music!";
     const newHaiku = new Haiku(poem)
-    expect(newHaiku.countLines(poem)).toEqual(3);
+    newHaiku.countLines(poem);
+    expect(newHaiku.lines).toEqual(3);
   })
 })
