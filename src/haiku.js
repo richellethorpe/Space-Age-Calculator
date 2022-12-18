@@ -4,6 +4,7 @@ export default class Haiku {
 constructor(poem){
     this.poem = poem;
     this.lines = 1;
+    this.validLines;
     
   }
 
@@ -15,5 +16,9 @@ stringPoem.forEach(word => {
     this.lines +=1;
 }
 })
+}
+
+checkLines(){
+
 }
 }
