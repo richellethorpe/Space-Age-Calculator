@@ -1,5 +1,5 @@
-# Galactic Calculator
-#### By Richelle Thorpe
+# Haiku
+#### By Richelle Thorpe and Anahi Ruiz
 #### desciption
 
 ## Technologies Used
