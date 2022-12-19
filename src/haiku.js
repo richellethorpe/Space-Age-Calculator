@@ -1,4 +1,4 @@
-// rmmmt
+
 
 export default class Haiku {
 constructor(line1, line2, line3){
@@ -15,9 +15,9 @@ splitLine.forEach(function(word) {
  if (word){
   syllableCount ++;
  }
- return this.line1Count = syllableCount;
 })
-
+ this.line1Count += syllableCount;
+}
 }
 
 
