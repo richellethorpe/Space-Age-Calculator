@@ -9,14 +9,14 @@ constructor(line1, line2, line3){
 
   }
 syllableCounter(line) {
-// const splitLine = line.split(" ");
-// let syllableCount = 0;
-// splitLine.forEach(function(word) {
-//  if (word){
-//   syllableCount ++;
-//  }
-//  return this.line1Count = syllableCount;
-}
+const splitLine = line.split(" ");
+let syllableCount = 0;
+splitLine.forEach(function(word) {
+ if (word){
+  syllableCount ++;
+ }
+ return this.line1Count = syllableCount;
+})
 
 }
 
