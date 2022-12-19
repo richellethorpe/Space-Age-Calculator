@@ -11,5 +11,11 @@ describe ("Haiku", () => {
     expect(newHaiku.line3).toEqual("In the east");
   })
 
+  test("should count one syllable per word for line 1", () => {
+    const newHaiku = new Haiku("Blow air from the west","Fallen leaves gather","In the east");
+    newHaiku.syllableCounter("Blow air from the west");
+    expect(newHaiku.line1Count).toEqual(5);
+
+})  
 })
 
