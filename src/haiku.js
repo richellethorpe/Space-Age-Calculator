@@ -5,71 +5,44 @@ constructor(line1, line2, line3){
     this.line1 = line1;
     this.line2 = line2;
     this.line3 = line3;
-    this.line1Count = 0;
-    this.line2Count = 0;
-    this.line3Count = 0;
 
+}
+//need to run this first to lop off any e's at the end of a word
+sliceE (line) {
+  let stringPoem = line.split(" ");
+  let silentEArray = [];
+  stringPoem.forEach(word => {
+    let splitWord = word.split('');
+    if (splitWord[splitWord.length - 1] === "e"){
+      let newWord = splitWord.slice(0,splitWord.length -1);
+      silentEArray.push(newWord.join("").toString());
+    } else {
+      silentEArray.push(splitWord.join("").toString());
+    }
+  })
+  
+  let stringSilentEArray = silentEArray.join(" ").toString();
+  return stringSilentEArray;
+}
+
+syllableCounter(noEline) {
+  const splitLine = noEline.split(" ");
+  let syllableCount = 0;
+  const vowels = ["a", "e", "i", "o", "u"];
+  splitLine.forEach(word => {
+    let splitword =word.split("");
+    if (word.length < 4){
+      syllableCount ++;
+    }else{
+    splitword.forEach(element => {
+          vowels.forEach(vowel => {
+            if (element === vowel) {
+              syllableCount ++;
+            } 
+          })
+  })
+}
+  })
+  return syllableCount;
   }
-syllableCounter(line) {
-const splitLine = line.split(" ");
-let syllableCount = 0;
-splitLine.forEach(function(word) {
- if (word){
-  syllableCount ++;
- }
-})
- return syllableCount;
 }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-// endingE (poem) {
-//   let stringPoem = poem.split(" ");
-//   silentEArray = [];
-//   stringPoem.forEach(word => {
-//     let splitWord = word.split('');
-//     if (splitWord[splitWord.length - 1] === "e"){
-//       let newWord = splitWord.slice(0,splitWord.length -1);
-//       silentEArray.push(newWord);
-//     } else {
-//       silentEArray.push(splitWord);
-//     }
-//   })
-//   return silentEArray;
-// }
-
-// syllableCounter() {
-//   let stringPoem = poem.split(" ");
-//   const vowels = ["a", "e", "i", "o", "u"]
-//   stringPoem.forEach(word => {
-//     for (let i= 0; i<word.length; i++)
-
-//   })
-// }
-// }
-
-//STEPS:count 1 for each word, 2. add one for each vowel, 3. 
-
-// Entry.prototype.numberOfVowels = function(passage) {
-//   const vowels = ["a", "e", "i", "o", "u"];
-//   let arrayPassage = passage.split("");
-//   arrayPassage.forEach(element => {
-//     vowels.forEach(vowel => {
-//       if (element === vowel) {
-//         this.vowelCount ++;
-//       } 
-//     })
-//     })
-//   }
-
