@@ -1,13 +1,20 @@
+import Sudoku from "../src/sudoku.js";
 
-// import Haiku from "../src/euler";
-// // Blowing from the west
-// // Fallen leaves gather
-// // In the east .
-// describe ("Haiku", () => {
-//   test("should correctly return a haiku object with three lines", () => {
-//     const newHaiku = new Haiku("Blowing from the west","Fallen leaves gather","In the east");
-//     expect(newHaiku.line1).toEqual("Blowing from the west");
-//     expect(newHaiku.line2).toEqual("Fallen leaves gather");
-//     expect(newHaiku.line3).toEqual("In the east");
-//   })
-// })
+describe('Sudoku', () => {
+  let newSudoku; 
+  beforeEach(() => {
+    newSudoku = new Sudoku(1,2,3,4,5,6,7,8,9);
+  });
+  
+    test('should correctly create a Sudoku object with nine values', () => {
+      expect(newSudoku.space1).toEqual(1);
+      expect(newSudoku.space2).toEqual(2)
+      expect(newSudoku.space3).toEqual(3);
+      expect(newSudoku.space4).toEqual(4);
+      expect(newSudoku.space5).toEqual(5);
+      expect(newSudoku.space6).toEqual(6);
+      expect(newSudoku.space7).toEqual(7);
+      expect(newSudoku.space8).toEqual(8);
+      expect(newSudoku.space9).toEqual(9);
+    });
+ });
