@@ -1,7 +1,9 @@
 import Sudoku from "../src/sudoku.js";
 
 describe('Sudoku', () => {
+
   let newSudoku; 
+  
   beforeEach(() => {
     newSudoku = new Sudoku(1,2,3,4,5,6,7,8,9);
   });
@@ -20,4 +22,10 @@ describe('Sudoku', () => {
   test('it should return true if all values are unique', () => {
     expect(newSudoku.checkDuplicates()).toEqual(true);
   });
+
+  test('it should return false if all values are not unique', () => {
+    newSudoku.space4 = 3;
+    expect(newSudoku.checkDuplicates()).toEqual(false);
+  })
+
  });
