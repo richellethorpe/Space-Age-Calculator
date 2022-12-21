@@ -3,10 +3,11 @@ import Sudoku from "../src/sudoku.js";
 describe('Sudoku', () => {
 
   let newSudoku; 
-  
+
   beforeEach(() => {
     newSudoku = new Sudoku(1,2,3,4,5,6,7,8,9);
   });
+  
   test('should correctly create a Sudoku object with nine values', () => {
     expect(newSudoku.space1).toEqual(1);
     expect(newSudoku.space2).toEqual(2)
