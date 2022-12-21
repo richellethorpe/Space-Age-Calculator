@@ -1,6 +1,6 @@
-# Haiku
-#### By Richelle Thorpe and Anahi Ruiz
-#### desciption
+# Sudoku Checker
+#### By Richelle Thorpe, Anahi Ruiz, Carl Sustrich, Dani Steely, & Tyler Quinn
+#### Validates Sudoku Games
 
 ## Technologies Used
 - HTML
@@ -14,6 +14,8 @@
 - WEBPACK
 
 ## Description
+
+- This application will check a sudoku grid to validate if it meets all sudoku rules.
 
 
 ## Setup/Installation Requirements
