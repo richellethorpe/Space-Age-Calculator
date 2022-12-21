@@ -18,6 +18,6 @@ describe('Sudoku', () => {
   });
 
   test('it should return true if all values are unique', () => {
-    expect(newSudoku.checkDuplicates()).toEqual(true)
+    expect(newSudoku.checkDuplicates()).toEqual(true);
   });
  });

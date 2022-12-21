@@ -10,5 +10,11 @@ export default class Sudoku {
     this.space8 = space8;
     this.space9 = space9;
   }
-}
+
+  checkDuplicates() {
+    let arrayOfValues = Object.values(this);
+    return new Set(arrayOfValues).size === arrayOfValues.length;
+    };
+  }
+
 
