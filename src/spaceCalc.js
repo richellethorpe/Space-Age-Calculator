@@ -9,5 +9,7 @@ export default class SpaceCalc {
     this.mercuryAge = this.earthAge / .24;
 
   }
+
+
 }
 
