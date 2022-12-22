@@ -19,7 +19,7 @@ export default class SpaceCalc {
     this.marsAge = parseInt(this.earthAge / 1.88);
   }
   findJupiterAge(){
-    
+    this.jupiterAge = parseInt(this.earthAge / 11.86);
   }
 }
 
