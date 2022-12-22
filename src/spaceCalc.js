@@ -1,9 +1,11 @@
 export default class SpaceCalc {
-  constructor(age){
+  constructor(age, yearsPast){
     this.earthAge = age;
     this.mercuryAge =0;
     this.venusAge = 0;
     this.jupiterAge = 0;
+    this.yearsPast = yearsPast;
+  
   }
 
 

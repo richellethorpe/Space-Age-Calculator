@@ -7,7 +7,7 @@ describe ("SpaceCalc", () => {
   let newSpaceCalc;
 
   beforeEach(() =>{
-    newSpaceCalc = new SpaceCalc(36);
+    newSpaceCalc = new SpaceCalc(36,6);
   });
 
   test("should correctly return a space calc object with one age value in earth years", () => {
@@ -33,6 +33,11 @@ describe ("SpaceCalc", () => {
   test("should correctly return a space calc object with age value in jupiter years", () => {
     newSpaceCalc.findJupiterAge();
     expect(newSpaceCalc.jupiterAge).toEqual(3);
+  })
+
+  test("should correctly return how many years have passed on each planet since a past birthday", () => {
+    newSpaceCalc.yearsPast();
+    expect(newSpaceCalc.yearsPast()).toEqual();
   })
 })
 
