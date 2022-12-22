@@ -1,8 +1,8 @@
 export default class SpaceCalc {
-  constructor(age, yearsPast, futureYears){
+  constructor(age, yearsPast, futureAge){
     this.earthAge = age;
     this.yearsPast = yearsPast;
-    this.futureYears = futureYears;
+    this.futureAge = futureAge;
     this.mercuryAge =0;
     this.venusAge = 0;
     this.marsAge =0;
@@ -36,7 +36,14 @@ export default class SpaceCalc {
   }
 
   findYearsToPass(){
-
+    let futureAgeInput = this.futureAge;
+    let futureEarthYears = futureAgeInput - this.earthAge;
+    let futureMercuryYears = parseInt(futureEarthYears / .24);
+    let futureVenusYears = parseInt(futureEarthYears / .62);
+    let futureMarsYears = parseInt(futureEarthYears / 1.88);
+    let futureJupiterYears = parseInt(futureEarthYears / 11.86);
+    let futureAgeResponse = `To reach the age of ${futureAgeInput} years old, the following amount of years need to pass on these planets. Earth: ${futureEarthYears} years to pass, Mercury: ${futureMercuryYears} years to pass, Venus: ${futureVenusYears} years to pass, Mars: ${futureMarsYears} years to pass, Jupiter: ${futureJupiterYears} years to pass`;
+    return futureAgeResponse;
   }
 }
 

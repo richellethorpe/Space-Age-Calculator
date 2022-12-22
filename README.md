@@ -1,6 +1,6 @@
-# Sudoku Checker
-#### By Richelle Thorpe, Anahi Ruiz, Carl Sustrich, Dani Steely, & Tyler Quinn
-#### Validates Sudoku Games
+# Space Calculator
+#### By Richelle Thorpe
+#### Validates Age on Different Planets
 
 ## Technologies Used
 - HTML
@@ -12,10 +12,11 @@
 - BABELRC
 - JSON
 - WEBPACK
+- NODE
 
 ## Description
 
-- This application will check a sudoku grid to validate if it meets all sudoku rules.
+- This application determines a user's age based on a planet's solar years.
 
 
 ## Setup/Installation Requirements
