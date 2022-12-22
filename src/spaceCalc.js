@@ -1,8 +1,8 @@
 export default class SpaceCalc {
-  constructor(age, yearsPast, futureAge){
+  constructor(age, yearsPast, futureYears){
     this.earthAge = age;
     this.yearsPast = yearsPast;
-    this.futureAge = futureAge;
+    this.futureYears = futureYears;
     this.mercuryAge =0;
     this.venusAge = 0;
     this.marsAge =0;
@@ -35,8 +35,8 @@ export default class SpaceCalc {
 
   }
 
-  // findYearsToPass(){
+  findYearsToPass(){
 
-  // }
+  }
 }
 

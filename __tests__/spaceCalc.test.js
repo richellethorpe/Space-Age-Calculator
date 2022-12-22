@@ -7,7 +7,7 @@ describe ("SpaceCalc", () => {
   let newSpaceCalc;
 
   beforeEach(() =>{
-    newSpaceCalc = new SpaceCalc(36,6);
+    newSpaceCalc = new SpaceCalc(36,6,10);
   });
 
   test("should correctly return a space calc object with one age value in earth years", () => {
@@ -38,9 +38,9 @@ describe ("SpaceCalc", () => {
   test("should correctly return how many years have passed on each planet since a past birthday", () => {
     expect(newSpaceCalc.findYearsPast()).toEqual('6 years ago you would be the following ages on these planets. Earth: 30 years old, Mercury: 125 years old, Venus: 48 years old, Mars: 15 years old, Jupiter: 2 years old');
   })
-  test("should correctly return how many years have passed on each planet since a past birthday", () => {
-    expect(newSpaceCalc.findYearsToPass()).toEqual("In 10 years you would be the following ages on these planets. Earth: 30 years old, Mercury: 125 years old, Venus: 48 years old, Mars: 15 years old, Jupiter: 2 years old");
+  test("should correctly return how many years have yet to pass on each planet until a future birthday", () => {
+    expect(newSpaceCalc.findYearsToPass()).toEqual("In 10 years you would be the following ages on these planets. Earth: 10 years old, Mercury: tbd years old, Venus: tbd years old, Mars: tbd years old, Jupiter: tbd years old");
   })
-})
+}) 
 
 
