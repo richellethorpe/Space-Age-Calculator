@@ -14,6 +14,8 @@ export default class SpaceCalc {
     this.venusAge = parseInt(this.earthAge / .62);
   }
 
-
+  findMarsAge(){
+    
+  }
 }
 
