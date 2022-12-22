@@ -35,8 +35,8 @@ export default class SpaceCalc {
 
   }
 
-  findYearsToPass(){
+  // findYearsToPass(){
 
-  }
+  // }
 }
 
