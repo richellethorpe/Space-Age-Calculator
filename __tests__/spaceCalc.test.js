@@ -24,6 +24,11 @@ describe ("SpaceCalc", () => {
     newSpaceCalc.findVenusAge();
     expect(newSpaceCalc.venusAge).toEqual(58);
   })
+
+  test("should correctly return a space calc object with age value in mars years", () => {
+    newSpaceCalc.findMarsAge();
+    expect(newSpaceCalc.marsAge).toEqual(19);
+  })
 })
 
 
