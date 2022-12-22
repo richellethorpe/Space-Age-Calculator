@@ -1,6 +1,5 @@
 //rrmt
 
-import { beforeEach } from "node:test";
 import SpaceCalc from "../src/spaceCalc";
 
 
@@ -21,4 +20,5 @@ describe ("SpaceCalc", () => {
     expect(newSpaceCalc.mercuryAge).toEqual(105);
   })
 })
+
 
