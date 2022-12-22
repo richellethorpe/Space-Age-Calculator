@@ -34,5 +34,9 @@ export default class SpaceCalc {
     return pastAgeResponse;
 
   }
+
+  findYearsToPass(){
+
+  }
 }
 
