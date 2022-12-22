@@ -17,7 +17,7 @@ describe ("SpaceCalc", () => {
 
   test("should correctly return a space calc object with age value in mercury years", () => {
     newSpaceCalc.findMercuryAge();
-    expect(newSpaceCalc.mercuryAge).toEqual(105);
+    expect(newSpaceCalc.mercuryAge).toEqual(150);
   })
 })
 
