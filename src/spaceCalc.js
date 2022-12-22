@@ -10,6 +10,9 @@ export default class SpaceCalc {
 
   }
 
+  findVenusAge(){
+    
 
+  }
 }
 
