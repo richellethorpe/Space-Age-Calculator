@@ -3,6 +3,7 @@ export default class SpaceCalc {
     this.earthAge = age;
     this.mercuryAge =0;
     this.venusAge = 0;
+    this.jupiterAge = 0;
   }
 
 
