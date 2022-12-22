@@ -1,10 +1,11 @@
 export default class SpaceCalc {
   constructor(age, yearsPast){
     this.earthAge = age;
+    this.yearsPast = yearsPast;
     this.mercuryAge =0;
     this.venusAge = 0;
     this.jupiterAge = 0;
-    this.yearsPast = yearsPast;
+    
   
   }
 
@@ -22,6 +23,10 @@ export default class SpaceCalc {
   }
   findJupiterAge(){
     this.jupiterAge = parseInt(this.earthAge / 11.86);
+  }
+
+  findYearsPast() {
+
   }
 }
 

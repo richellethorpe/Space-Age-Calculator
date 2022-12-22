@@ -36,8 +36,7 @@ describe ("SpaceCalc", () => {
   })
 
   test("should correctly return how many years have passed on each planet since a past birthday", () => {
-    newSpaceCalc.yearsPast();
-    expect(newSpaceCalc.yearsPast()).toEqual();
+    expect(newSpaceCalc.findYearsPast()).toEqual("tbd");
   })
 })
 
