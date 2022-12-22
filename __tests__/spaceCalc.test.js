@@ -36,7 +36,7 @@ describe ("SpaceCalc", () => {
   })
 
   test("should correctly return how many years have passed on each planet since a past birthday", () => {
-    expect(newSpaceCalc.findYearsPast()).toEqual("tbd");
+    expect(newSpaceCalc.findYearsPast()).toEqual("6 years ago you would be the following ages on these planets. Earth: 30 years old, Mercury: 125 years old, Venus: 48 years old, Mars: 15 years old, Jupiter: 2 years old");
   })
 })
 

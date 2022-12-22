@@ -4,12 +4,9 @@ export default class SpaceCalc {
     this.yearsPast = yearsPast;
     this.mercuryAge =0;
     this.venusAge = 0;
+    this.marsAge =0;
     this.jupiterAge = 0;
-    
-  
   }
-
-
   findMercuryAge(){
     this.mercuryAge = parseInt(this.earthAge / .24);
   }
@@ -26,6 +23,14 @@ export default class SpaceCalc {
   }
 
   findYearsPast() {
+    let yearsAgo = this.yearsPast;
+    let pastEarthAge = this.earthAge - this.yearsPast;
+    let pastMercuryAge = parseInt((this.earthAge - this.yearsPast) / .24);
+    let pastVenusAge = parseInt((this.earthAge - this.yearsPast) / .62);
+    let pastMarsAge = parseInt((this.earthAge - this.yearsPast) / 1.88);
+    let pastJupiterAge = parseInt((this.earthAge - this.yearsPast) / 11.86);
+    let pastAgeResponse = `${yearsAgo} years ago you would be the following ages on these planets. Earth: ${pastEarthAge} years old, Mercury: ${pastMercuryAge} years old, Venus: ${pastVenusAge} years old, Mars: ${pastMarsAge} years old, Jupiter: ${pastJupiterAge} years old`;
+    return pastAgeResponse;
 
   }
 }
